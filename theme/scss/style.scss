@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+$primary: rgb(14, 116, 156);
+$info: rgb(14, 116, 156);
+$link: rgb(14, 116, 156);
+$success: rgb(61, 173, 224);
+$warning: rgb(224, 186, 61);
+$danger: rgb(224, 61, 82);
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat&display=swap');
+
+@import '../libs/bulma/bulma.sass';
+@import '../libs/bulma/bulma-timeline.sass';
+
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+  font-display: swap;
+}
+
+.navbar {
+  background-color: $primary !important;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family:  'Arvo', serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  font-size: 1.3rem;
+}
+
+.logo {
+  background-color: rgba(255,255,255,0.6);
+}
+
+.cover-box {
+  padding: 50px;
+}
+
+.transparent-black-background {
+  background-color: rgba(0,0,0,0.6);
+}
+
+.message-body {
+  .subtitle {
+    margin-bottom: 0.5rem !important;
+    margin-top: 1.5rem !important;
+  }
+
+  h1 {
+    @extend .subtitle, .is-2;
+    padding-bottom: 5px;
+  }
+
+  h2 {
+    @extend .subtitle, .is-3;
+    padding-bottom: 5px;
+  }
+
+  h3 {
+    @extend .subtitle, .is-4;
+    padding-bottom: 5px;
+  }
+
+  h4 {
+    @extend .subtitle, .is-5;
+    padding-bottom: 5px;
+  }
+
+  h5 {
+    @extend .subtitle, .is-6;
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+
+  h6 {
+    @extend .subtitle, .is-6;
+  }
+
+
+  figure {
+    margin: 25px !important;
+  }
+
+  ol,
+  ul {
+    margin-inline-start: 50px;
+    list-style-type: disc;
+  }
+
+  .table {
+    margin: 25px !important;
+    padding: 5px !important;
+  }
+
+  table {
+    @extend .table;
+  }
+
+  .image {
+    @extend .has-text-centered;
+    background: $white-ter;
+    margin: 0 auto !important;
+    min-width: 214px;
+
+    figcaption {
+      color: $grey-darker;
+      margin-bottom: 4px;
+      margin-left: 2px;
+      margin-right: 2px;
+      padding-bottom: 4px;
+    }
+    img {
+      display: inline-block;
+    }
+  }
+  img {
+    display:block;
+    margin: 0 auto;
+  }
+  p {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+}
+
+
+.grid-container {
+  display: grid;
+  grid-gap: 0.5em;
+}
+
+
+.card {
+  height: max-content;
+}
+
+#map {
+  height: 400px;
+  margin-bottom: 50px;
+  width: 100% !important;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1rem !important;
+}
+
+.card-footer {
+  padding: 0.5em;
+}
